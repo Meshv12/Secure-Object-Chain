@@ -34,12 +34,6 @@ SHA-256 (Secure Hash Algorithm 256-bit) is a member of the SHA-2 (Secure Hash Al
 ### Password Security
 - User passwords are hashed using SHA-256 before storing them in databases. During login, the password is hashed again and compared to the stored hash. This protects passwords even if the database is compromised.
 
-### File Integrity Verification
-- SHA-256 is used to verify the integrity of files during transfer. A hash of the file is computed before and after the transfer to ensure it has not been altered.
-
-### Digital Certificates
-- SHA-256 is widely used in SSL/TLS certificates to create secure connections between web servers and browsers.
-
 ## Security
 SHA-256 is considered highly secure and is currently resistant to all known practical attacks. However, as with any cryptographic algorithm, it is theoretically vulnerable to advances in computational power, such as quantum computing.
 
