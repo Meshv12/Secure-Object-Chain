@@ -1,7 +1,8 @@
 # Secure-Object-Chain : Simple Blockchain Implementation in C++
 Overview
-
 This project implements a basic blockchain in C++ to demonstrate the core principles behind blockchain technology. It includes functionalities for adding blocks, verifying the integrity of the blockchain, altering blocks, and hacking the chain to restore integrity. The project uses SHA-256 hashing for securing block data and ensuring the immutability of the blockchain.
+
+
 Features
     Block Creation:
         Each block contains data, a reference to the previous block's hash, and its own hash. The hash is computed using SHA-256 and includes the block's data and the previous block's hash.
