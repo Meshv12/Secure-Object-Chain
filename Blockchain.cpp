@@ -7,38 +7,38 @@ class Block
 {
 public:
     Block(int data, const string &prevHash);
-    string getPrevHash() const;
-    string getHash() const;
-    int getData() const;
-    void printBlock() const;
+    string getPrevHash();
+    string getHash();
+    int getData();
+    void printBlock();
 
 private:
     int blockdata;
     string prevhash;
     string hash;
-    string calculateHash() const;
+    string calculateHash();
     static string toString(int data, const string &prevHash);
 };
 
 Block::Block(int data, const string &prevHash)
     : blockdata(data), prevhash(prevHash), hash(calculateHash()) {}
 
-string Block::getPrevHash() const
+string Block::getPrevHash()
 {
     return prevhash;
 }
 
-string Block::getHash() const
+string Block::getHash()
 {
     return hash;
 }
 
-int Block::getData() const
+int Block::getData()
 {
     return blockdata;
 }
 
-string Block::calculateHash() const
+string Block::calculateHash()
 {
     string dataToHash = toString(blockdata, prevhash);
     unsigned char hash[SHA256_DIGEST_LENGTH];
@@ -57,7 +57,7 @@ string Block::toString(int data, const string &prevHash)
     return prevHash + to_string(data);
 }
 
-void Block::printBlock() const
+void Block::printBlock()
 {
     cout << "Block Data: " << blockdata << endl;
     cout << "Previous Hash: " << prevhash << endl;
@@ -69,14 +69,14 @@ class Blockchain
 public:
     Blockchain();
     void addBlock(int data);
-    void verifyChain() const;
+    void verifyChain();
     void alterNthBlock(int n, int newData);
     void hackChain();
-    void printAllBlocks() const;
+    void printAllBlocks();
 
 private:
     vector<Block> chain;
-    bool hashCompare(const string &hash1, const string &hash2) const;
+    bool hashCompare(const string &hash1, const string &hash2);
 };
 
 Blockchain::Blockchain()
@@ -91,7 +91,7 @@ void Blockchain::addBlock(int data)
     chain.emplace_back(Block(data, prevHash));
 }
 
-void Blockchain::verifyChain() const
+void Blockchain::verifyChain()
 {
     for (size_t i = 1; i < chain.size(); ++i)
     {
@@ -141,7 +141,7 @@ void Blockchain::hackChain()
     }
 }
 
-void Blockchain::printAllBlocks() const
+void Blockchain::printAllBlocks()
 {
     for (const Block &block : chain)
     {
@@ -150,7 +150,7 @@ void Blockchain::printAllBlocks() const
     }
 }
 
-bool Blockchain::hashCompare(const string &hash1, const string &hash2) const
+bool Blockchain::hashCompare(const string &hash1, const string &hash2)
 {
     return hash1 == hash2;
 }
