@@ -45,15 +45,15 @@ SHA-256 (Secure Hash Algorithm 256-bit) is a member of the SHA-2 (Secure Hash Al
 ## Security
 SHA-256 is considered highly secure and is currently resistant to all known practical attacks. However, as with any cryptographic algorithm, it is theoretically vulnerable to advances in computational power, such as quantum computing.
 
-## Diagram
-![SHA-256 Diagram](https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/SHA-256.svg/1200px-SHA-256.svg.png)
 *Credit: [Wikipedia](https://en.wikipedia.org/wiki/SHA-2)*
 
-## Further Reading
-For more detailed information about SHA-256, you can refer to the following sources:
-- [Techopedia on SHA-256](https://www.techopedia.com/what-is-sha-256/how-it-works-in-blockchain-cryptography)
-- [Boot.dev blog on SHA-256](https://blog.boot.dev/cryptography/sha-256)
+## Resources
 
----
+- [NIST SHA-3 Standard](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf)
+- [RFC 6234 - US Secure Hash Algorithms](https://tools.ietf.org/html/rfc6234)
+- [SHA-3 Algorithm Explained](https://keccak.team/keccak.html)
+- [NIST Computer Security Resource Center - Hash Functions](https://csrc.nist.gov/projects/hash-functions)
 
-This description provides a comprehensive overview of the SHA-256 algorithm, its working process, applications, and security considerations.
+## Disclaimer
+
+This implementation is for educational purposes only. For production use, please refer to well-audited cryptographic libraries.
