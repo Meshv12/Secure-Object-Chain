@@ -1,4 +1,4 @@
-# Simple Blockchain Implementation in C++
+# Basic Blockchain Implementation using OOPS in C++
 
 ## Overview
 

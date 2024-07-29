@@ -1,8 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <sstream>
-#include <iomanip>
 #include <bits/stdc++.h>
 #include <openssl/sha.h>
 
@@ -86,7 +81,7 @@ private:
 
 Blockchain::Blockchain()
 {
-    // Create the genesis block
+    // Create the Starting block of chain
     chain.emplace_back(Block(0, "0"));
 }
 
