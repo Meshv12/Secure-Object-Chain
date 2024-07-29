@@ -27,11 +27,9 @@ SHA-256 (Secure Hash Algorithm 256-bit) is a member of the SHA-2 (Secure Hash Al
 
 ### Blockchain Technology
 - **Proof-of-Work (PoW)**: SHA-256 is crucial in Bitcoin's PoW consensus algorithm. Miners compete to find a hash below a certain target by varying a nonce. The enormous computational power required to find this nonce ensures the security of the blockchain.
-- **Further Reading**: [Techopedia on SHA-256 in Blockchain](https://www.techopedia.com/what-is-sha-256/how-it-works-in-blockchain-cryptography)
 
 ### Digital Signatures
 - SHA-256 is used to generate a hash of a message, which is then signed with a private key. This allows verification of the message's integrity without revealing its content.
-- **Further Reading**: [Boot.dev blog on SHA-256](https://blog.boot.dev/cryptography/sha-256)
 
 ### Password Security
 - User passwords are hashed using SHA-256 before storing them in databases. During login, the password is hashed again and compared to the stored hash. This protects passwords even if the database is compromised.
